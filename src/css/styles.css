@@ -1,0 +1,117 @@
+/* ========================= */
+/* 🔹 VARIABLES GLOBALES */
+/* ========================= */
+
+:root {
+    --colorPrimario: #2ECC71;
+    --colorSecundario: #3498DB;
+    --colorBoton: #27AE60;
+    --colorFondoSeccion: #F5F7FA;
+    --colorBlanco: #FFFFFF;
+    --colorNegro: #000000;
+
+    --fuentePrincipal: "Poppins", sans-serif;
+    --fuenteSecundaria: "Arial", sans-serif;
+}
+
+
+/* ========================= */
+/* 🔹 RESET + BASE */
+/* ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--colorBlanco);
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    color: var(--colorNegro);
+    line-height: 1.5;
+}
+
+/* Contenedor global */
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* ========================= */
+/* 🔹 INICIO INTEGRANTE 1 */
+/* HEADER + HERO */
+/* ========================= */
+
+/* Aquí trabaja integrante 1 */
+
+/* ========================= */
+/* 🔹 FIN INTEGRANTE 1 */
+/* ========================= */
+
+
+
+/* ========================= */
+/* 🔹 INICIO INTEGRANTE 2 */
+/* SERVICES */
+/* ========================= */
+
+/* Aquí trabaja integrante 2 */
+
+/* ========================= */
+/* 🔹 FIN INTEGRANTE 2 */
+/* ========================= */
+
+
+
+/* ========================= */
+/* 🔹 INICIO INTEGRANTE 3 */
+/* ABOUT + CTA */
+/* ========================= */
+
+/* Aquí trabaja integrante 3 */
+
+/* ========================= */
+/* 🔹 FIN INTEGRANTE 3 */
+/* ========================= */
+
+
+
+/* ========================= */
+/* 🔹 SCRUM MASTER (TÚ) */
+/* FOOTER + AJUSTES */
+/* ========================= */
+
+/* Aquí trabajas tú */
+
+/* ========================= */
+/* 🔹 FIN SCRUM MASTER */
+/* ========================= */
+
+
+
+/* ========================= */
+/* 🔹 RESPONSIVE */
+/* ========================= */
+
+/* 📱 MOBILE → YA ESTÁ ARRIBA */
+
+
+/* 📲 TABLET */
+@media (min-width: 768px) {
+
+    /* cada integrante ajusta su sección */
+}
+
+
+/* 💻 PC */
+@media (min-width: 1024px) {
+
+    /* cada integrante ajusta su sección */
+}
