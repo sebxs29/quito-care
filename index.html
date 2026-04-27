@@ -22,14 +22,56 @@
   <link rel="stylesheet" href="src/css/styles.css">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
 </head>
 <body>
 
-<!-- 🔹 INICIO INTEGRANTE 1 -->
-<header class="header"></header>
-<section id="hero" class="hero"></section>
-<!-- 🔹 FIN INTEGRANTE 1 -->
+  <!-- 🔹 INICIO INTEGRANTE 1 -->
+  <header class="header">
+    <nav class="nav__header">
+      <h1 class="navbar_logo">Quito<span class="navbar__logo--primary">Care</span></h1>
+      
+      <!-- Botón hamburguesa (para mobile) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><button class="nav__login-btn">Login</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero__container">
+      
+      <!-- Columna izquierda: texto -->
+      <div class="hero__content">
+        <p class="hero__subtitle">
+          Telemedicina en Quito <br>
+          <span class="hero__highlight">fácil y rápida</span>
+        </p>
+        <p class="hero__description">
+          Agenda tu cita médica sin salir de casa y recibe atención de profesionales certificados.
+        </p>
+        <button class="hero__button">Agendar cita</button>
+      </div>
+
+      <!-- Columna derecha: imagen -->
+      <div class="hero__image">
+        <img src="./src/images/hero.png" alt="hero" loading="lazy">
+      </div>
+      
+    </div>
+  </section>
+  <!-- 🔹 FIN INTEGRANTE 1 -->
 
 
 <!-- 🔹 INICIO INTEGRANTE 2 -->
@@ -46,6 +88,6 @@
 <!-- 🔹 SCRUM MASTER (TÚ) -->
 <footer class="footer"></footer>
 <!-- 🔹 FIN SCRUM MASTER -->
-
+  
 </body>
 </html>
