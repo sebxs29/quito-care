@@ -12,70 +12,113 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Google Fonts (Poppins) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Normalize (reset profesional) -->
+  <!-- Normalize -->
   <link rel="stylesheet" href="src/css/normalize.css">
 
   <!-- CSS principal -->
   <link rel="stylesheet" href="src/css/styles.css">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="src/images/favicon.png?v=1" type="image/png">
 </head>
+
 <body>
 
-  <!-- 🔹 INICIO INTEGRANTE 1 -->
-  <header class="header">
-    <nav class="nav__header">
-      <h1 class="navbar_logo">Quito<span class="navbar__logo--primary">Care</span></h1>
-      
-      <!-- Botón hamburguesa (para mobile) -->
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      
-      <ul class="nav__menu" id="navMenu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Como funciona</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><button class="nav__login-btn">Login</button></li>
-      </ul>
-    </nav>
-  </header>
+<!-- 🔹 INICIO INTEGRANTE 1 -->
+<header class="header">
+  <nav class="nav__header container">
 
-  <section id="hero" class="hero">
-    <div class="hero__container">
-      
-      <!-- Columna izquierda: texto -->
-      <div class="hero__content">
-        <p class="hero__subtitle">
-          Telemedicina en Quito <br>
-          <span class="hero__highlight">fácil y rápida</span>
-        </p>
-        <p class="hero__description">
-          Agenda tu cita médica sin salir de casa y recibe atención de profesionales certificados.
-        </p>
-        <button class="hero__button">Agendar cita</button>
-      </div>
+    <h1 class="navbar_logo">
+      Quito<span class="navbar__logo--primary">Care</span>
+    </h1>
 
-      <!-- Columna derecha: imagen -->
-      <div class="hero__image">
-        <img src="./src/images/hero.png" alt="hero" loading="lazy">
-      </div>
-      
+    <ul class="nav__menu">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#" class="nav__login-btn">Login</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<section id="hero" class="hero">
+  <div class="hero__container container">
+    
+    <div class="hero__content">
+      <p class="hero__subtitle">
+        Telemedicina en Quito <br>
+        <span class="hero__highlight">fácil y rápida</span>
+      </p>
+
+      <p class="hero__description">
+        Agenda tu cita médica sin salir de casa y recibe atención de profesionales certificados.
+      </p>
+
+      <a href="#" class="hero__button">Agendar cita</a>
     </div>
-  </section>
-  <!-- 🔹 FIN INTEGRANTE 1 -->
+
+    <div class="hero__image">
+      <img src="src/images/hero.png" alt="Doctora en telemedicina" loading="lazy">
+    </div>
+
+  </div>
+</section>
+<!-- 🔹 FIN INTEGRANTE 1 -->
 
 
 <!-- 🔹 INICIO INTEGRANTE 2 -->
-<section id="services" class="services"></section>
+<section id="services" class="servicios">
+  <div class="container">
+
+    <h2 class="servicios__titulo">¿Por qué elegir QuitoCare?</h2>
+
+    <div class="servicios__grid">
+
+      <article class="servicio">
+        <img src="src/images/compu.png" alt="Videollamada Médica" loading="lazy">
+        <h3>Atención médica en casa</h3>
+        <p>Recibe atención médica por videollamada desde la comodidad de tu hogar.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/persona.png" alt="Especialistas Verificados" loading="lazy">
+        <h3>Especialistas verificados</h3>
+        <p>Profesionales certificados y con amplia experiencia en distintas especialidades.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/calendario.png" alt="Agenda de Citas Médicas" loading="lazy">
+        <h3>Agenda tu cita</h3>
+        <p>Elige el especialista, la fecha y la hora que mejor se adapten a ti.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/escritorio.png" alt="Consulta médica en línea" loading="lazy">
+        <h3>Consulta médica en línea</h3>
+        <p>Videollamadas seguras con profesionales de la salud desde tu hogar.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/celular.png" alt="Acceso desde tu móvil" loading="lazy">
+        <h3>Acceso desde tu móvil</h3>
+        <p>Conéctate con tu médico desde tu computadora o smartphone.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/agendar.png" alt="Gestión rápida" loading="lazy">
+        <h3>Gestión rápida</h3>
+        <p>Agenda tu cita en pocos pasos y recibe recordatorios automáticos.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
 <!-- 🔹 FIN INTEGRANTE 2 -->
 
 
@@ -88,6 +131,6 @@
 <!-- 🔹 SCRUM MASTER (TÚ) -->
 <footer class="footer"></footer>
 <!-- 🔹 FIN SCRUM MASTER -->
-  
+
 </body>
 </html>
