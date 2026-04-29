@@ -1,6 +1,5 @@
-/* ========================= */
+
 /* 🔹 VARIABLES GLOBALES */
-/* ========================= */
 
 :root {
     --colorPrimario: #2ECC71;
@@ -9,16 +8,12 @@
     --colorFondoSeccion: #F5F7FA;
     --colorBlanco: #FFFFFF;
     --colorNegro: #000000;
-    --colorTexto: #333333;
-    --colorGris: #4a5568;
 
     --fuentePrincipal: "Poppins", sans-serif;
     --fuenteSecundaria: "Arial", sans-serif;
 }
 
-/* ========================= */
 /* 🔹 RESET + BASE */
-/* ========================= */
 
 * {
     margin: 0;
@@ -29,14 +24,12 @@
 html {
     background-color: var(--colorBlanco);
     font-size: 62.5%; /* 1rem = 10px */
-    scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--fuentePrincipal);
     color: var(--colorNegro);
     line-height: 1.5;
-    overflow-x: hidden;
 }
 
 /* Contenedor global */
@@ -46,275 +39,213 @@ body {
     margin: 0 auto;
 }
 
-/* Imágenes */
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
-/* ========================= */
 /* 🔹 INICIO INTEGRANTE 1 */
-/* HEADER + HERO */
-/* ========================= */
 
-/* ========== HEADER ========== */
+/* HEADER */
 .header {
-  background-color: var(--colorBlanco);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
+    background-color: var(--colorBlanco);
+    padding: 1.5rem 0;
 }
 
 .nav__header {
-  max-width: 120rem;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* Logo */
-.navbar-logo {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--colorPrimario);
-  cursor: pointer;
+.navbar_logo {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .navbar__logo--primary {
-  color: var(--colorPrimario);
+    color: var(--colorPrimario);
 }
 
-/* Menú normal (escritorio) */
+/* MENÚ */
 .nav__menu {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
 }
 
-.nav__menu li a {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: var(--colorTexto);
-  font-weight: 500;
-  transition: color 0.3s ease;
+.nav__menu a {
+    text-decoration: none;
+    color: var(--colorNegro);
+    font-size: 1.3rem;
 }
 
-.nav__menu li a:hover {
-  color: var(--colorPrimario);
-}
-
-/* Botón Login */
+/* Botón login */
 .nav__login-btn {
-  background: var(--colorPrimario);
-  color: var(--colorBlanco);
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  border-radius: 2.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: var(--fuentePrincipal);
+    background-color: var(--colorBoton);
+    color: var(--colorBlanco);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
 }
 
-.nav__login-btn:hover {
-    background: #3e413f;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Botón hamburguesa (oculto en escritorio) */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  z-index: 1001;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: var(--colorPrimario);
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-/* ========== HERO ========== */
+/* HERO */
 .hero {
-  background: linear-gradient(135deg, var(--colorFondoSeccion) 0%, #e8ecf2 100%);
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  padding: 5rem 0;
+    padding: 3rem 0;
+    background-color: var(--colorFondoSeccion);
 }
 
 .hero__container {
-  max-width: 120rem;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .hero__content {
-  flex: 1;
-  min-width: 28rem;
+    text-align: center;
 }
 
+/* Texto */
 .hero__subtitle {
-  font-size: 2.8rem;
-  color: var(--colorNegro);
-  margin-bottom: 1rem;
-  font-weight: 600;
+    font-size: 2.4rem;
+    font-weight: 700;
 }
 
 .hero__highlight {
-  color: var(--colorPrimario);
-  font-weight: 700;
+    color: var(--colorPrimario);
 }
 
 .hero__description {
-  font-size: 1.6rem;
-  color: var(--colorGris);
-  line-height: 1.6;
-  margin: 2rem 0;
+    font-size: 1.4rem;
+    margin: 1rem 0;
 }
 
+/* Botón */
 .hero__button {
-  display: inline-block;
-  background: var(--colorBoton);
-  color: var(--colorBlanco);
-  text-decoration: none;
-  padding: 1.2rem 3rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  border-radius: 5rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3);
-  font-family: var(--fuentePrincipal);
+    display: inline-block;
+    background-color: var(--colorBoton);
+    color: var(--colorBlanco);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
 }
 
-.hero__button:hover {
-  background: #3e413f;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
-.hero__image {
-  flex: 1;
-  min-width: 28rem;
-  text-align: center;
-}
-
+/* Imagen */
 .hero__image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 2rem;
+    width: 100%;
 }
 
-/* ========================= */
-/* 🔹 INICIO INTEGRANTE 1 */
-/* HEADER + HERO */
-/* ========================= */
-
-/* Aquí trabaja integrante 1 */
-
-/* ========================= */
 /* 🔹 FIN INTEGRANTE 1 */
-/* ========================= */
 
-
-
-/* ========================= */
 /* 🔹 INICIO INTEGRANTE 2 */
-/* SERVICES */
-/* ========================= */
 
-/* Aquí trabaja integrante 2 */
+.servicios {
+  background: var(--colorFondoSeccion);
+  padding: 6rem 0;
+}
 
-/* ========================= */
+.servicios__titulo {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  color: var(--colorTexto);
+}
+
+/* MOBILE FIRST */
+.servicios__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* TARJETA */
+.servicio {
+  background: var(--colorBlanco);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.servicio img {
+  width: 60px;
+  margin-bottom: 1.5rem;
+}
+
+.servicio h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--colorPrimario);
+}
+
+.servicio p {
+  font-size: 1.4rem;
+  color: var(--colorGris);
+}
+
 /* 🔹 FIN INTEGRANTE 2 */
-/* ========================= */
 
 
 
-/* ========================= */
-/* 🔹 INICIO INTEGRANTE 3 */
-/* ABOUT + CTA */
-/* ========================= */
-
-/* Aquí trabaja integrante 3 */
-
-/* ========================= */
-/* 🔹 FIN INTEGRANTE 3 */
-/* ========================= */
-
-
-
-/* ========================= */
-/* 🔹 SCRUM MASTER (TÚ) */
-/* FOOTER + AJUSTES */
-/* ========================= */
-
-/* Aquí trabajas tú */
-
-/* ========================= */
-/* 🔹 FIN SCRUM MASTER */
-/* ========================= */
-
-
-
-/* ========================= */
-/* 🔹 RESPONSIVE */
-/* ========================= */
-@media (max-width: 768px) {
-  /* Hamburguesa visible */
-  .hamburger {
-    display: flex;
-  }
-
-  /* Menú oculto por defecto */
-  .nav__menu {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background-color: var(--colorBlanco);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    transition: left 0.3s ease-in-out;
-    z-index: 999;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-    
-/* 📱 MOBILE → YA ESTÁ ARRIBA */
-
-
-/* 📲 TABLET */
+/*Tablet*/
 @media (min-width: 768px) {
 
-    /* cada integrante ajusta su sección */
+    .nav__header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__menu {
+        justify-content: flex-end;
+    }
+
+    .hero__subtitle {
+        font-size: 3rem;
+    }
+
+    .hero__description {
+        font-size: 1.6rem;
+    }
+
+    .servicios h2 {
+    font-size: 2.2rem;
+  }
+  .servicios__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
-
-
-/* 💻 PC */
+/*PC*/
 @media (min-width: 1024px) {
 
-    /* cada integrante ajusta su sección */
+    .hero__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero__content {
+        width: 50%;
+        text-align: left;
+    }
+
+    .hero__image {
+        width: 50%;
+    }
+
+  .servicios__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
