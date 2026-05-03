@@ -23,6 +23,9 @@
 
   <!-- Favicon -->
   <link rel="icon" href="src/images/favicon.png?v=1" type="image/png">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
@@ -31,45 +34,49 @@
 <header class="header">
   <nav class="nav__header container">
 
-    <h1 class="navbar_logo">
-      Quito<span class="navbar__logo--primary">Care</span>
-    </h1>
+    <div class="nav__top">
+      <h1 class="navbar_logo">
+        Quito<span class="navbar__logo--primary">Care</span>
+      </h1>
+    </div>
 
-    <ul class="nav__menu">
-      <li><a href="#hero">Inicio</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#como-funciona">Como funciona</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Como funciona</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
       <li><a href="#" class="nav__login-btn">Login</a></li>
     </ul>
 
   </nav>
 </header>
 
-<section id="hero" class="hero">
-  <div class="hero__container container">
-    
-    <div class="hero__content">
-      <p class="hero__subtitle">
-        Telemedicina en Quito <br>
-        <span class="hero__highlight">fácil y rápida</span>
-      </p>
+  <section id="hero" class="hero">
+    <div class="hero__container container">
+      
+      <!-- Columna izquierda: texto -->
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Telemedicina en Quito <br>
+          <span class="hero__highlight">fácil y rápida</span>
+        </h1>
 
-      <p class="hero__description">
-        Agenda tu cita médica sin salir de casa y recibe atención de profesionales certificados.
-      </p>
+        <p class="hero__description">
+          Agenda tu cita médica sin salir de casa y recibe atención de profesionales certificados.
+        </p>
 
-      <a href="#" class="hero__button">Agendar cita</a>
+        <button class="hero__button">Agendar cita</button>
+      </div>
+
+      <!-- Columna derecha: imagen -->
+      <div class="hero__image">
+        <img src="src/images/hero.png" alt="Doctora en telemedicina" loading="lazy">
+      </div>
+      
     </div>
-
-    <div class="hero__image">
-      <img src="src/images/hero.png" alt="Doctora en telemedicina" loading="lazy">
-    </div>
-
-  </div>
-</section>
-<!-- 🔹 FIN INTEGRANTE 1 -->
+  </section>
+  <!-- 🔹 FIN INTEGRANTE 1 -->
 
 
 <!-- 🔹 INICIO INTEGRANTE 2 -->
@@ -120,9 +127,11 @@
   </div>
 </section>
 <!-- 🔹 FIN INTEGRANTE 2 -->
-  
+
 
 <!-- 🔹 INICIO INTEGRANTE 3 -->
+<section id="about" class="about"></section>
+<section id="cta-top" class="cta-top"></section>
 <section id="informacion" class="informacion">
   <div class="informacion__contenedor container">
 
@@ -152,7 +161,7 @@
   <div class="cta__contenedor container">
 
     <div class="cta__icono">
-      <img src="src/images/calendario-plus.png" alt="Calendario">
+      <img src="src/images/calendario-blanco.png" alt="Calendario">
     </div>
   
     <div class="cta__info">
@@ -171,7 +180,60 @@
 
 
 <!-- 🔹 SCRUM MASTER (TÚ) -->
-<footer class="footer"></footer>
+<footer class="footer">
+  <div class="footer__container container">
+
+    <div class="footer__brand">
+      <h3 class="footer__logo">
+        Quito<span class="footer_logo--highlight">Care</span>
+      </h3>
+
+      <p class="footer__description">
+        Telemedicina en Quito rápida, fácil y segura
+      </p>
+
+      <div class="footer__social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div> 
+    </div>
+
+    <div class="footer__links">
+      <h4 class="footer__title">Enlaces</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__services">
+      <h4 class="footer__title">Servicios</h4>
+      <ul>
+        <li><a href="#">Consulta en línea</a></li>
+        <li><a href="#">Especialidades</a></li>
+        <li><a href="#">Doctores</a></li>
+        <li><a href="#">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__contact">
+      <h4 class="footer__title">Contacto</h4>
+      <p>Quito, Ecuador</p>
+      <p>info@quitocare.com</p>
+      <p>+593 98 496 9316</p>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2026 QuitoCare. Todos los derechos reservados.</p>
+  </div>
+
+</footer>
 <!-- 🔹 FIN SCRUM MASTER -->
 
 </body>
