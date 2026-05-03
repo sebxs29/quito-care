@@ -196,6 +196,128 @@ body {
 
 /* 🔹 FIN INTEGRANTE 2 */
 
+/* 🔹 INICIO INTEGRANTE 3 */
+
+.informacion {
+    background-color: var(--colorBlanco);
+    padding: 6rem 0;
+}
+
+.informacion__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.informacion__imagen img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.informacion__contenido {
+    text-align: center;
+}
+
+.informacion__subtitulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--colorPrimario);
+    margin-bottom: 1rem;
+}
+
+.informacion__titulo {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.informacion__descripcion {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.informacion__boton {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--colorBoton);
+    color: var(--colorBlanco);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.cta {
+    background-color: var(--colorPrimario);
+    padding: 3rem 0;
+    color: var(--colorBlanco);
+}
+
+.cta__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.cta__icono img {
+    width: 60px;
+}
+
+.cta__titulo {
+    font-size: 2rem;
+}
+
+.cta__texto {
+    font-size: 1.4rem;
+}
+
+.cta__boton {
+    background-color: var(--colorBlanco);
+    color: var(--colorPrimario);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+@media (min-width: 1024px) {
+
+    .informacion__contenedor {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .informacion__imagen,
+    .informacion__contenido {
+        width: 50%;
+    }
+
+    .informacion__contenido {
+        text-align: left;
+    }
+
+    .informacion__boton {
+        margin: 0;
+    }
+
+    .cta__contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .cta__icono img {
+        width: 70px;
+    }
+}
+
+/* 🔹 FIN INTEGRANTE 3 */
 
 
 /*Tablet*/
