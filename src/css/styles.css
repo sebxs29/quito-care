@@ -60,26 +60,28 @@ body {
 .navbar_logo {
     font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .navbar__logo--primary {
-    color: var(--colorPrimario)
+    color: var(--colorPrimario);
 }
 
 .nav__menu {
     list-style: none;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .nav__menu a {
     text-decoration: none;
     color: var(--colorNegro);
+    font-size: 1.3rem;
     transition: color 0.3s ease;
-    display:block;
 }
 
 .nav__menu a:hover:not(.nav__login-btn) {
@@ -89,12 +91,12 @@ body {
 .nav__menu .nav__login-btn {
     background-color: var(--colorBoton);
     color: var(--colorBlanco);
-    padding: 0.8rem 1.6rem;
+    padding: 0.6rem 1.4rem;
     border: none;
     border-radius: 14px;
     text-decoration: none;
-    transition: all 0.3s ease;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .nav__login-btn:hover {
