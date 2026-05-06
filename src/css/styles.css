@@ -1,3 +1,4 @@
+
 /* 🔹 VARIABLES GLOBALES */
 
 :root {
@@ -56,6 +57,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 
 .navbar_logo {
     font-size: 2.2rem;
@@ -173,11 +175,7 @@ body {
 .servicios {
     padding: 3rem 1.5rem;
 
-    background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.02),   /* transición desde gris */
-        var(--colorBlanco)
-    );
+    background-color: var(--colorFondoSeccion);
 
     box-shadow: 
         0 4px 6px rgba(0,0,0,0.05),
@@ -232,7 +230,7 @@ body {
 
 .servicio p {
   font-size: 1.4rem;
-  color: var(--colorGris);
+  color: #555555;
 }
 
 /* 🔹 FIN INTEGRANTE 2 */
@@ -309,12 +307,12 @@ body {
 .specialty__title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--colorNegro);
+    color: var(--colorPrimario);
 }
 
 .specialty__description {
     font-size: 1.4rem;
-    color: #777;
+    color: #555555;
 }
 
 /* BOTÓN CENTRADO */
@@ -342,7 +340,6 @@ body {
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-/* 🔹 FIN SECCIÓN SPECIALTIES */
 
 .informacion {
     padding: 3rem 1.5rem;
@@ -568,8 +565,85 @@ body {
     margin-right: auto;
 }
 
-
 /* 🔹 FIN INTEGRANTE 4 */
+
+.contact {
+  padding: 3rem 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* FORM */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--colorPrimario);
+}
+
+.contact__description {
+  font-size: 0.9rem;
+  margin: 0.8rem 0 0.4rem;
+  color: #555;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.contact__textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* CHECK */
+.contact__check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+/* BUTTON */
+.contact__button {
+    background-color: var(--colorBoton);
+    color: var(--colorBlanco);
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact__button:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* MAP */
+.contact__map {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 
 /*Tablet*/
 @media (min-width: 768px) {
@@ -609,29 +683,13 @@ body {
         font-size: 1.6rem;
     }
 
-    .servicios__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.servicios__grid {
+    grid-template-columns: repeat(2, 1fr);
+}
 
-    .servicios h2 {
-        font-size: 2.2rem;
-    }
-
-    .specialties__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .specialties__titulo {
-        font-size: 2.8rem;
-    }
-
-    .specialties__subtitulo {
-        font-size: 1.6rem;
-    }
-
-    .specialties__boton {
-        font-size: 1.5rem;
-    }
+.servicios h2 {
+    font-size: 2.5rem;
+}
 
     .informacion__contenedor {
         gap: 3rem;
@@ -716,7 +774,41 @@ body {
         margin-top: 1rem;
     }
 
+        .specialties__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .specialties__titulo {
+        font-size: 2.5rem;
+    }
+
+    .specialties__subtitulo {
+        font-size: 1.6rem;
+    }
+
+    .specialties__boton {
+        font-size: 1.5rem;
+    }
+
+  .contact {
+    padding: 3rem 2rem;
+  }
+
+  .contact__title {
+    font-size: 1.8rem;
+  }
+
+  .contact__input,
+  .contact__textarea {
+    font-size: 1rem;
+  }
+
+  .contact__map {
+    height: 300px;
+  }
 }
+
+
 /*PC*/
 @media (min-width: 1024px) {
 
@@ -765,75 +857,68 @@ body {
         padding: 1rem 2rem;
         font-size: 1.1rem;
     }
-    .specialties__grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
-    .specialties__titulo {
-        font-size: 3.2rem;
-    }
 
-    .specialties__subtitulo {
-        font-size: 1.7rem;
-    }
+.servicios__grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 
-    .specialties__boton {
-        font-size: 1.6rem;
-        padding: 1.2rem 3rem;
-    }
+.servicios h2 {
+    font-size: 2.7rem;
+}
 
-    .informacion__contenedor {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
-        gap: 4rem;
-    }
+  .informacion__contenedor {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 4rem;
+  }
 
-    .informacion__imagen,
-    .informacion__contenido {
-        flex: 1;
-    }
+  .informacion__imagen,
+  .informacion__contenido {
+    flex: 1;
+  }
 
-    .informacion__imagen img {
-        max-width: 100%;
-    }
+  .informacion__imagen img {
+    max-width: 100%;
+  }
 
-    .informacion__titulo {
-        font-size: 3.2rem;
-    }
+  .informacion__titulo {
+    font-size: 3.2rem;
+  }
 
-    .informacion__descripcion {
-        font-size: 1.7rem;
-    }
+  .informacion__descripcion {
+    font-size: 1.7rem;
+  }
 
-    .cta__contenedor {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        gap: 3rem;
-    }
+  .cta__contenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+  }
 
-    .cta__info {
-        max-width: 60rem;
-    }
+  .cta__info {
+    max-width: 60rem;
+  }
 
-    .cta__icono img {
-        width: 80px;
-    }
+  .cta__icono img {
+    width: 80px;
+  }
 
-    .cta__titulo {
-        font-size: 2.8rem;
-    }
+  .cta__titulo {
+    font-size: 2.8rem;
+  }
 
-    .cta__texto {
-        font-size: 1.6rem;
-    }
+  .cta__texto {
+    font-size: 1.6rem;
+  }
 
-    .cta__boton {
-        font-size: 1.5rem;
-    }
+  .cta__boton {
+    font-size: 1.5rem;
+  }
 
 
     .footer__container {
@@ -879,118 +964,37 @@ body {
         padding-top: 2rem;
         font-size: 1.3rem;
     }
-}
-
-/* SECCIÓN REGISTRO * -> Sebastian */
-
-.contact {
-    background-color: var(--colorFondoSeccion);
-    padding: 6rem 0;
-}
-
-.contact__container {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-/* FORMULARIO */
-.contact__form {
-    background-color: var(--colorBlanco);
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.contact__title {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-    color: var(--colorPrimario);
-}
-
-.contact__description {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-.contact__input,
-.contact__textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 0.8rem;
-    border: 1px solid #ccc;
-    font-size: 1.4rem;
-    font-family: var(--fuentePrincipal);
-}
-
-.contact__textarea {
-    resize: none;
-    height: 100px;
-}
-
-.contact__check {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-}
 
 
-.contact__button {
-    width: 100%;
-    background-color: var(--colorBoton);
-    color: var(--colorBlanco);
-    padding: 1rem;
-    border: none;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact__button:hover {
-    background-color: #219150;
-}
-
-/* MAPA */
-.contact__map {
-    height: 300px;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-/* TABLET */
-@media (min-width: 768px) {
-
-    .contact__container {
-        gap: 4rem;
+        .specialties__grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .contact__map {
-        height: 400px;
+    .specialties__titulo {
+        font-size: 2.7rem;
     }
+
+    .specialties__subtitulo {
+        font-size: 1.7rem;
+    }
+
+    .specialties__boton {
+        font-size: 1.6rem;
+        padding: 1.2rem 3rem;
+    }
+
+  .contact__container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .contact__form {
+    width: 50%;
+  }
+
+  .contact__map {
+    width: 50%;
+    height: auto;
+  }
+
 }
-
-/* PC */
-@media (min-width: 1024px) {
-
-    .contact__container {
-        flex-direction: row;
-        align-items: stretch;
-    }
-
-    .contact__form,
-    .contact__map {
-        width: 50%;
-    }
-
-    .contact__map {
-        height: auto;
-    }
-}
-
-/* SECCIÓN REGISTRO FIN * -> Sebastian */
-
-/* SECCIÓN REGISTRO FIN * -> Sebastian */
