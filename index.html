@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QuitoCare</title>
+
+  <!-- Optimización de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="src/css/normalize.css">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="src/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="src/images/favicon.png?v=1" type="image/png">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- 🔹 INICIO INTEGRANTE 1 -->
+<header class="header">
+  <nav class="nav__header container">
+
+    <div class="nav__top">
+      <h1 class="navbar_logo">
+        Quito<span class="navbar__logo--primary">Care</span>
+      </h1>
+    </div>
+
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Como funciona</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#" class="nav__login-btn">LOGIN</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+  <section id="hero" class="hero">
+    <div class="hero__container container">
+      
+      <!-- Columna izquierda: texto -->
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Telemedicina en Quito <br>
+          <span class="hero__highlight">fácil y rápida</span>
+        </h1>
+
+        <p class="hero__description">
+          Agenda tu cita médica sin salir de casa y recibe atención de profesionales certificados.
+        </p>
+
+        <button class="hero__button">Agendar cita</button>
+      </div>
+
+      <!-- Columna derecha: imagen -->
+      <div class="hero__image">
+        <img src="src/images/hero.png" alt="Doctora en telemedicina" loading="lazy">
+      </div>
+      
+    </div>
+  </section>
+  <!-- 🔹 FIN INTEGRANTE 1 -->
+
+
+<!-- 🔹 INICIO INTEGRANTE 2 -->
+<section id="services" class="servicios">
+  <div class="container">
+
+    <h2 class="servicios__titulo">¿Por qué elegir QuitoCare?</h2>
+
+    <div class="servicios__grid">
+
+      <article class="servicio">
+        <img src="src/images/compu.png" alt="Videollamada Médica" loading="lazy">
+        <h3>Atención médica en casa</h3>
+        <p>Recibe atención médica por videollamada desde la comodidad de tu hogar.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/persona.png" alt="Especialistas Verificados" loading="lazy">
+        <h3>Especialistas verificados</h3>
+        <p>Profesionales certificados y con amplia experiencia en distintas especialidades.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/calendario.png" alt="Agenda de Citas Médicas" loading="lazy">
+        <h3>Agenda tu cita</h3>
+        <p>Elige el especialista, la fecha y la hora que mejor se adapten a ti.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/escritorio.png" alt="Consulta médica en línea" loading="lazy">
+        <h3>Consulta médica en línea</h3>
+        <p>Videollamadas seguras con profesionales de la salud desde tu hogar.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/celular.png" alt="Acceso desde tu móvil" loading="lazy">
+        <h3>Acceso desde tu móvil</h3>
+        <p>Conéctate con tu médico desde tu computadora o smartphone.</p>
+      </article>
+
+      <article class="servicio">
+        <img src="src/images/agendar.png" alt="Gestión rápida" loading="lazy">
+        <h3>Gestión rápida</h3>
+        <p>Agenda tu cita en pocos pasos y recibe recordatorios automáticos.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- 🔹 FIN INTEGRANTE 2 -->
+
+<!--SECCION DE ESPECIALIDADES MÉDICAS parte Andrés--> 
+<section id="specialties" class="specialties">
+  <div class="container">
+
+    <h2 class="specialties__titulo">Especialidades médicas</h2>
+    <p class="specialties__subtitulo">
+      Contamos con profesionales en diversas áreas para cuidar tu salud.
+    </p>
+
+    <div class="specialties__grid">
+
+      <article class="specialty">
+        <div class="specialty__icon">
+          <i class="fa-solid fa-stethoscope"></i>
+        </div>
+        <h3 class="specialty__title">Medicina general</h3>
+        <p class="specialty__description">
+          Atención integral para el cuidado de tu salud.
+        </p>
+      </article>
+
+      <article class="specialty">
+        <div class="specialty__icon">
+          <i class="fa-solid fa-baby"></i>
+        </div>
+        <h3 class="specialty__title">Pediatría</h3>
+        <p class="specialty__description">
+          Cuidado especializado para niños y adolescentes.
+        </p>
+      </article>
+
+      <article class="specialty">
+        <div class="specialty__icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3 class="specialty__title">Psicología</h3>
+        <p class="specialty__description">
+          Apoyo emocional y salud mental para tu bienestar.
+        </p>
+      </article>
+
+      <article class="specialty">
+        <div class="specialty__icon">
+          <i class="fa-solid fa-hand-dots"></i>
+        </div>
+        <h3 class="specialty__title">Dermatología</h3>
+        <p class="specialty__description">
+          Diagnóstico y tratamiento para el cuidado de la piel.
+        </p>
+      </article>
+
+      <article class="specialty">
+        <div class="specialty__icon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <h3 class="specialty__title">Cardiología</h3>
+        <p class="specialty__description">
+          Prevención, diagnóstico y tratamiento de enfermedades del corazón.
+        </p>
+      </article>
+
+      <article class="specialty">
+        <div class="specialty__icon">
+          <i class="fa-solid fa-bone"></i>
+        </div>
+        <h3 class="specialty__title">Traumatología</h3>
+        <p class="specialty__description">
+          Atención de lesiones óseas, articulares y musculares.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="specialties__boton-contenedor">
+      <a href="#" class="specialties__boton">Ver todas las especialidades</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🔹 INICIO INTEGRANTE 3 -->
+<section id="informacion" class="informacion">
+  <div class="informacion__contenedor container">
+
+    <div class="informacion__imagen">
+      <img src="src/images/doctora.png" alt="Doctora" loading="lazy">
+    </div>
+
+    <div class="informacion__contenido">
+      <p class="informacion__subtitulo">SOBRE QUITOCARE</p>
+
+      <h2 class="informacion__titulo">
+        Atención médica digital segura y confiable
+      </h2>
+
+      <p class="informacion__descripcion">
+        QuitoCare conecta a pacientes con doctores certificados a través de consultas en línea,
+        ofreciendo un servicio rápido, seguro y accesible en Quito.
+      </p>
+
+      <a href="#" class="informacion__boton">Conoce más</a>
+    </div>
+
+  </div>
+</section>
+
+<!--FAQ-->
+<section class="faq" id="faq">
+  <div class="faq__container container">
+
+    <div class="faq__header">
+      <h2 class="faq__title">Preguntas frecuentes</h2>
+      <p class="faq__description">Resolvemos las dudas más comunes sobre QuitoCare</p>
+    </div>
+
+    <div class="faq__content">
+
+        <details class="faq__item">
+          <summary class="faq__question">¿Las consultas son seguras?</summary>
+          <div class="faq__answer">
+            <p>
+            Sí, todas las consultas cuentan con protección y privacidad para garantizar la seguridad de tu información médica.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">¿Necesito descargar alguna app?</summary>
+          <div class="faq__answer">
+            <p>
+            No necesariamente. Puedes acceder a QuitoCare desde cualquier navegador en tu celular, tablet o computadora.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">¿Cómo agendo una cita?</summary>
+          <div class="faq__answer">
+            <p>
+            Solo debes seleccionar la especialidad, elegir el horario disponible y completar tus datos para confirmar la cita.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">¿Qué métodos de pago aceptan?</summary>
+          <div class="faq__answer">
+            <p>
+            Aceptamos tarjetas de crédito, débito y otros métodos de pago digitales seguros.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">¿Puedo cancelar una cita?</summary>
+          <div class="faq__answer">
+            <p>
+            Sí, puedes cancelar o reprogramar tu cita desde la plataforma antes de la hora establecida.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">¿Problemas con la conexión?</summary>
+          <div class="faq__answer">
+            <p>
+            Si tienes inconvenientes durante la consulta, puedes volver a conectarte o contactar a nuestro soporte técnico.
+            </p>
+          </div>
+        </details>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="cta" class="cta">
+  <div class="cta__contenedor container">
+
+    <div class="cta__icono">
+      <img src="src/images/calendario-blanco.png" alt="Calendario">
+    </div>
+  
+    <div class="cta__info">
+      <h2 class="cta__titulo">¿Listo para cuidar tu salud?</h2>
+      <p class="cta__texto">
+        Agenda tu cita hoy y recibe atención médica de calidad
+      </p>
+    </div>
+
+    <a href="#" class="cta__boton">Conoce más</a>
+
+  </div>
+</section>
+
+<!-- 🔹 FIN INTEGRANTE 3 -->
+
+
+<!-- SECCION DE REGISTRO DE DATOS parte Daniel -->
+<section id="contact" class="contact">
+  <div class="contact__container container">
+
+    <!-- FORMULARIO -->
+    <div class="contact__form">
+      <h2 class="contact__title">Registra tus datos</h2>
+
+      <form>
+        <p class="contact__description">
+          Escribe la especialidad médica que necesitas
+        </p>
+
+        <input 
+          type="text" 
+          placeholder="Ej: Cardiología, Psicología..." 
+          class="contact__input"
+          required
+        >
+
+        <p class="contact__description">
+          Llena los siguientes items
+        </p>
+
+        <input 
+          type="text" 
+          placeholder="Nombre completo" 
+          class="contact__input" 
+          required
+        >
+
+        <input 
+          type="email" 
+          placeholder="Correo electrónico" 
+          class="contact__input" 
+          required
+        >
+
+        <input 
+          type="tel" 
+          placeholder="Número de celular" 
+          class="contact__input" 
+          required
+        >
+
+        <textarea 
+          placeholder="Describe el motivo de tu cita..." 
+          class="contact__textarea" 
+          required
+        ></textarea>
+
+        <!-- CHECK -->
+        <div class="contact__check">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">Acepto los términos y condiciones</label>
+        </div>
+
+        <button type="submit" class="contact__button">
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <!-- MAPA -->
+    <div class="contact__map">
+      <iframe
+        src="https://www.google.com/maps?q=Quito,Ecuador&output=embed"
+        width="100%"
+        height="100%"
+        style="border: 0;"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🔹 SCRUM MASTER (TÚ) -->
+<footer class="footer">
+  <div class="footer__container container">
+
+    <div class="footer__brand">
+      <h3 class="footer__logo">
+        Quito<span class="footer_logo--highlight">Care</span>
+      </h3>
+
+      <p class="footer__description">
+        Telemedicina en Quito rápida, fácil y segura
+      </p>
+
+      <div class="footer__social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div> 
+    </div>
+
+    <div class="footer__links">
+      <h4 class="footer__title">Enlaces</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__services">
+      <h4 class="footer__title">Servicios</h4>
+      <ul>
+        <li><a href="#">Consulta en línea</a></li>
+        <li><a href="#">Especialidades</a></li>
+        <li><a href="#">Doctores</a></li>
+        <li><a href="#">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__contact">
+      <h4 class="footer__title">Contacto</h4>
+      <p>Quito, Ecuador</p>
+      <p>info@quitocare.com</p>
+      <p>+593 98 496 9316</p>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2026 QuitoCare. Todos los derechos reservados.</p>
+  </div>
+
+</footer>
+<!-- 🔹 FIN SCRUM MASTER -->
+
+
+
+</body>
+</html>
